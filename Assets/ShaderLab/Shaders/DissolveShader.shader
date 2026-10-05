@@ -2,7 +2,7 @@ Shader "ShaderLab/DissolveShader"
 {
     Properties
     {
-        _BaseMap ("Base Map", 2D) = "white" {}
+        _BaseMap ("Albedo", 2D) = "white" {}
         _Color ("Color", Color) = (1,1,1,1)
 
         _Noise ("Noise", 2D) = "white" {}
@@ -20,7 +20,7 @@ Shader "ShaderLab/DissolveShader"
             "RenderType" = "Opaque"
             "RenderPipeline" = "UniversalPipeline"
         }
-
+        
         Pass
         {
             HLSLPROGRAM
